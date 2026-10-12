@@ -25,4 +25,4 @@ spec:
           image: shreyachundi/week8_docker:week12image
 
           ports:
-            - containerPort: 5000
+            - containerPort: 5003
