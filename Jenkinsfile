@@ -11,10 +11,10 @@ pipeline {
                 sh 'python3 -m pip install -r requirements.txt'
 
                 // Start Flask application in background
-                sh 'start /B python app.py'
+                sh 'python3 app.py &'
 
                 // Wait for Flask application to start
-                sh 'ping 127.0.0.1 -n 5 > nul'
+                sh 'sleep 5'
 
                 // Run Selenium tests
                 sh 'python -m pytest -v'
