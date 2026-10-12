@@ -17,7 +17,7 @@ pipeline {
                 sh 'sleep 5'
 
                 // Run Selenium tests
-                sh 'python -m pytest -v'
+                sh 'python3 -m pytest -v'
             }
         }
 
